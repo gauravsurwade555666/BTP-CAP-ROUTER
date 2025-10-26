@@ -54,7 +54,7 @@ resources:
       service-plan: application
       path: ./xs-security.json
       config:
-        xsappname: BTP-CAP-ROUTER-${org}-${space}
+        xsappname: BTP-CAP-ROUTER
         tenant-mode: dedicated
         oauth2-configuration:
           redirect-uris:

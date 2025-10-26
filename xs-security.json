@@ -1,19 +1,19 @@
 {
-    "xsappname": "bpa-cap-router",
+    "xsappname": "BTP-CAP-ROUTER",
     "tenant-mode": "dedicated",
     "scopes": [
         {
-            "name": "$XSAPPNAME.Admin",
-            "description": "Admin"
+            "name": "$XSAPPNAME.testscope",
+            "description": "testscope"
         }
     ],
     "attributes": [],
     "role-templates": [
         {
-            "name": "Admin",
+            "name": "testscope",
             "description": "generated",
             "scope-references": [
-                "$XSAPPNAME.Admin"
+                "$XSAPPNAME.testscope"
             ],
             "attribute-references": []
         }
@@ -24,7 +24,8 @@
             "x509"
         ],
         "redirect-uris": [
-            "https://*.applicationstudio.cloud.sap/**"
+            "https://*.cfapps.us10-001.hana.ondemand.com/**",
+      "https://*.cfapps.us10-001.hana.ondemand.com/login/callback"
         ]
     }
 }
