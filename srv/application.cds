@@ -1,6 +1,6 @@
 service appsrv {
 
-    
+@requires: 'Admin'
 function healthCheck() returns {
         status    : String;        // Overall health indicator
         version   : String;        // App/package version
